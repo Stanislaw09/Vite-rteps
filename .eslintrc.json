@@ -1,0 +1,101 @@
+{
+   "env": {
+      "browser": true,
+      "es2021": true
+   },
+   "extends": [
+      "airbnb",
+      "airbnb-typescript",
+      "airbnb/hooks",
+      "prettier",
+      "eslint:recommended",
+      "plugin:@typescript-eslint/eslint-recommended",
+      "plugin:@typescript-eslint/recommended-requiring-type-checking",
+      "plugin:@typescript-eslint/recommended",
+      "plugin:react/recommended",
+      "plugin:react/jsx-runtime",
+      "plugin:import/recommended",
+      "plugin:import/errors",
+      "plugin:import/warnings",
+      "plugin:import/typescript"
+   ],
+   "overrides": [],
+   "parser": "@typescript-eslint/parser",
+   "parserOptions": {
+      "ecmaVersion": "latest",
+      "sourceType": "module",
+      "project": "./tsconfig.json",
+      "ecmaFeatures": {
+         "jsx": true
+      }
+   },
+   "plugins": [
+      "react",
+      "prettier",
+      "@typescript-eslint",
+      "import"
+   ],
+   "rules": {
+      "no-plusplus": "off",
+      "import/order": "off",
+      "spaced-comment": "off",
+      "@typescript-eslint/no-shadow": "off",
+      "import/prefer-default-export": "off",
+      "@typescript-eslint/ban-ts-comment": "off",
+      "import/no-extraneous-dependencies": "off",
+      "arrow-body-style": "warn",
+      "no-nested-ternary": "warn",
+      "no-prototype-builtins": "warn",
+      "react-hooks/exhaustive-deps": "warn",
+      "@typescript-eslint/no-unsafe-call": "warn",
+      "@typescript-eslint/no-unsafe-return": "warn",
+      "@typescript-eslint/no-unsafe-argument": "warn",
+      "@typescript-eslint/no-unsafe-assignment": "warn",
+      "@typescript-eslint/no-unused-expressions": "warn",
+      "@typescript-eslint/restrict-plus-operands": "warn",
+      "@typescript-eslint/no-unsafe-member-access": "warn",
+      "@typescript-eslint/restrict-template-expressions": "warn",
+      "import/extensions": [
+         "error",
+         "ignorePackages",
+         {
+            "js": "never",
+            "jsx": "never",
+            "ts": "never",
+            "tsx": "never"
+         }
+      ],
+      "react/jsx-filename-extension": [
+         1,
+         {
+            "extensions": [
+               ".ts",
+               ".tsx"
+            ]
+         }
+      ]
+   },
+   "settings": {
+      "import/parsers": {
+         "@typescript-eslint/parser": [
+            ".ts",
+            ".tsx",
+            ".css",
+            ".scss"
+         ]
+      },
+      "import/resolver": {
+         "node": {
+            "extensions": [
+               ".js",
+               ".jsx",
+               ".ts",
+               ".tsx"
+            ]
+         },
+         "typescript": {
+            "alwaysTryTypes": true
+         }
+      }
+   }
+}
